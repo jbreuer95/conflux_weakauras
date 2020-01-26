@@ -79,7 +79,7 @@ end
 
 local id=aura_env.id
 local frame = WeakAuras.regions[id].region
-local item = aura_env.config["name"];
+local item = GetItemInfo(aura_env.config["name"]);
 local amount = aura_env.config["amount"];
 
 frame:EnableMouse(true)
