@@ -1,3 +1,4 @@
+-- PLAYER_DEAD, UPDATE_INVENTORY_DURABILITY, PLAYER_ENTERING_WORLD, ZONE_CHANGED, ZONE_CHANGED_INDOORS, ZONE_CHANGED_NEW_AREA
 function() 
     local active = aura_env.config["active"];
     if active then
