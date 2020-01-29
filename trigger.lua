@@ -1,3 +1,4 @@
+-- UNIT_INVENTORY_CHANGED, BAG_UPDATE, PLAYER_ENTERING_WORLD, ZONE_CHANGED, ZONE_CHANGED_INDOORS, ZONE_CHANGED_NEW_AREA
 function(allstates, event, _, subEvent, _, _, sourceName, _, _, _, _, _, _, spellID)     
     if type(allstates) ~= "table" then
         return
