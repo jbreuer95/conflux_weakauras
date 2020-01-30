@@ -17,11 +17,10 @@ function()
                     raidday = true
                 end
             end
-        end
-
-        local zoneName = GetRealZoneText()
-        if zoneName == raid then
-            aura_env.raided = true
+            local zoneName = GetRealZoneText()
+            if zoneName == raid then
+                aura_env.raided = true
+            end
         end
 
         if aura_env.raided == true or raidday == false then
