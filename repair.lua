@@ -5,6 +5,7 @@ function()
     if testmode ~= true then
         local raidday = false
         local ginfo = GetGuildInfoText()
+        local zoneName = GetRealZoneText()
 
         local raids = aura_env.config.raids
         for raid in raids:gmatch("([^,]+)") do
@@ -17,7 +18,6 @@ function()
                     raidday = true
                 end
             end
-            local zoneName = GetRealZoneText()
             if zoneName == raid then
                 aura_env.raided = true
             end
